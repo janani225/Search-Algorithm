@@ -17,8 +17,18 @@ To write a program to perform linear search and binary search using python progr
 5.	Else, compare x with the middle element of the elements on the left side of mid. This is done by setting high to high = mid - 1.
 6.	Repeat steps 2 to 5 until low meets high
 ## Program:
-i)	#Use a linear search method to match the item in a list.
-```def linearsearch(array, n, k):
+
+#Developed by:V.S.JANANI
+
+#RegisterNumber: 22003192
+
+
+i)Use a linear search method to match the item in a list.
+
+#Program for linear search method to match the item in a list
+
+
+def linearsearch(array, n, k):
 
     for i in range(0, n):
         if (array [i] == k):
@@ -35,13 +45,21 @@ if(result == -1):
     print("Element not found")
 else:
     print(array)
-    print("Element found at index: ", result)
+    print("Element found at index: ", result)        
+    
+     
 
 
 
-```
-ii)	# Find the element in a list using Binary Search(Iterative Method).
-```def binarySearchIter(array, k, low, high):
+
+
+ii)	Find the element in a list using Binary Search(Iterative Method).
+
+
+#Program to find the element in a list using Binary Search(Iterative Method)..
+
+
+def binarySearchIter(array, k, low, high):
     while(low<=high):
         mid=low+(high-low)//2
         if array[mid]==k:
@@ -49,8 +67,10 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
         elif array[mid]<k:
             low=mid+1
         else:
-            high=mid+1
+            high=mid-1
     return -1
+
+
 array=eval(input())
 array.sort()
 print(array)
@@ -66,10 +86,13 @@ else:
 
 
 
+iii)Find the element in a list using Binary Search (recursive Method).
 
-```
-iii)	# Find the element in a list using Binary Search (recursive Method).
-```def BinarySearch(arr, k, low, high):
+
+#Program to find the element in a list using Binary Search (recursive Method).
+
+
+def BinarySearch(arr, k, low, high):
     if high>=low:
         mid=low+(high-low)//2
         if arr[mid]==k:
@@ -98,9 +121,16 @@ else:
 
 
 
-
-```
 ## Sample Input and Output
+Linear search method
+![ex8py1](https://user-images.githubusercontent.com/113497340/192191163-a6241976-c947-4ae2-abe2-8a27da57df37.png)
+
+Binary search (iterative method)
+![ex8py2](https://user-images.githubusercontent.com/113497340/192191292-f5c26455-fff0-4e75-ba49-61e35b7801af.png)
+
+Binary search (recursive method)
+![ex8py3](https://user-images.githubusercontent.com/113497340/192193297-63a524f1-63bc-4d86-8ea8-1c1d84bb1012.png)
+
 
 
 
