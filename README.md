@@ -120,7 +120,7 @@ else:
 ```
 
 
-## Sample Input and Output
+## Output:
 Linear search method
 ![ex8py1](https://user-images.githubusercontent.com/113497340/192191163-a6241976-c947-4ae2-abe2-8a27da57df37.png)
 
